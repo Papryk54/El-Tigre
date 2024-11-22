@@ -1,0 +1,47 @@
+.about-us {
+	background: url(../images/about-us.jpg);
+	background-size: cover;
+	background-color: rgba(0, 0, 0, 0.7);
+	background-blend-mode: multiply;
+	color: $color-secondary;
+	position: relative;
+	height: 85vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.about-us h3 {
+	padding-top: 6vh;
+	margin-bottom: 8vh;
+}
+
+.about-us p {
+	font-family: "source-sans-pro", sans-serif;
+	font-weight: 600;
+	font-style: italic;
+	font-size: 2.8rem;
+	width: 44vw;
+	padding-right: 5vw;
+	margin-bottom: 30px;
+	letter-spacing: 2px;
+	line-height: 110%;
+}
+
+.join-us {
+	margin-right: -10vw;
+	color: $color-secondary;
+	text-align: right;
+}
+
+@media (max-width: 1980px) {
+	.about-us p {
+		font-size: 2rem;
+	}
+
+	.join-us {
+		margin-right: -10vw;
+		color: $color-secondary;
+		text-align: right;
+	}
+}

@@ -1,0 +1,49 @@
+//GLOBAL
+/*
+Source Sans Pro Regular
+font-family: "source-sans-pro", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+Source Sans Pro Semibold
+font-family: "source-sans-pro", sans-serif;
+font-weight: 600;
+font-style: normal;
+
+Source Sans Pro Semibold Italic
+font-family: "source-sans-pro", sans-serif;
+font-weight: 600;
+font-style: italic;
+
+Source Sans Pro Bold
+font-family: "source-sans-pro", sans-serif;
+font-weight: 700;
+font-style: normal;
+
+Source Sans Pro Bold Italic
+font-family: "source-sans-pro", sans-serif;
+font-weight: 700;
+font-style: italic;
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "source-sans-pro", sans-serif;
+}
+
+.section-title {
+	font-family: "source-sans-pro", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	border-bottom: 6px solid $color-accent;
+	text-transform: uppercase;
+	letter-spacing: 15px;
+	padding-bottom: 10px;
+	color: $color-accent;
+	width: 35vw;
+	text-align: center;
+	font-size: 5rem;
+	margin: 3vh 0 10vh 0;
+}

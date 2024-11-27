@@ -1,47 +1,124 @@
 .about-us {
-	background: url(../images/about-us.jpg);
-	background-size: cover;
-	background-color: rgba(0, 0, 0, 0.7);
-	background-blend-mode: multiply;
-	color: $color-secondary;
-	position: relative;
-	height: 85vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.about-us h3 {
-	padding-top: 6vh;
-	margin-bottom: 8vh;
+  background: url(../images/about-us.jpg);
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: multiply;
+  color: $color-secondary;
+  position: relative;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about-us p {
-	font-family: "source-sans-pro", sans-serif;
-	font-weight: 600;
-	font-style: italic;
-	font-size: 2.8rem;
-	width: 44vw;
-	padding-right: 5vw;
-	margin-bottom: 30px;
-	letter-spacing: 2px;
-	line-height: 110%;
+  font-family: "source-sans-pro", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 2.8rem;
+  width: 44vw;
+  padding-right: 5vw;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  line-height: 110%;
 }
 
 .join-us {
-	margin-right: -10vw;
-	color: $color-secondary;
-	text-align: right;
+  margin-right: -10vw;
+  color: $color-secondary;
+  text-align: right;
 }
 
 @media (max-width: 1980px) {
-	.about-us p {
-		font-size: 2rem;
-	}
+  .about-us p {
+    font-size: 2rem;
+  }
 
-	.join-us {
-		margin-right: -10vw;
-		color: $color-secondary;
-		text-align: right;
-	}
+  .join-us {
+    margin-right: -10vw;
+    color: $color-secondary;
+    text-align: right;
+  }
 }
+
+@media (max-width: 1440px){  
+  .about-us p {
+    font-size: 2rem;
+    width: 45%;
+    padding-right: 0vw;
+  }
+}
+
+@media (max-width: 1366px) {  
+  .about-us p {
+    font-size: 1.9rem;
+    width: 45%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .about-us p {
+    font-size: 1.7rem;
+    width: 45%;
+  }
+  
+  .join-us {
+    margin-right: -10vw;
+  }
+}
+
+// //Tablet
+
+@media (max-width: 1024px) {
+  .about-us p {
+    font-size: 1.5rem;
+    width: 45%;
+  }
+}
+
+@media (max-width: 834px) {
+  .about-us p {
+    text-align: center;
+    font-size: 1.9rem;
+    width: 45%;
+  }
+
+  .join-us {
+    margin-right: -40vw;
+  }
+}
+
+
+@media (max-width: 768px){
+  .about-us p {
+    font-size: 1.8rem;
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-us p {
+    font-size: 1.6rem;
+    width: 80%;
+  }
+}
+
+// //Mobile
+
+@media (max-width: 414px) {
+  .about-us p {
+    font-size: 1.1rem;
+  }
+}
+
+// @media (max-width: 375px){
+
+// }
+
+// @media (max-width: 360px) {
+  
+// }
+
+// @media (max-width: 320px) {
+  
+// }

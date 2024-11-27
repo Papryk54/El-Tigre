@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>El tigre</title>
-		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/style.css">
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-		/>
-		<link rel="stylesheet" href="https://use.typekit.net/adf4zhm.css" />
+		>
+		<link rel="stylesheet" href="https://use.typekit.net/adf4zhm.css">
 	</head>
 	<body>
 		<div class="hero">
@@ -31,12 +31,12 @@
 			<div class="motto-margin"></div>
 			<div class="discover">
 				<p>discover</p>
-				<i class="fa-regular fa-circle-down"></i>
+				<i class="fa-regular fa-circle-down" id="discover"></i>
 			</div>
 		</div>
 		<!-- Product Section -->
-		<div class="products-section">
-			<p class="section-title">Products</p>
+		<div class="products-section" id="products-section">
+			<h5 class="section-title">Products</h5>
 			<div id="output"></div>
 			<script id="product-template" type="text/x-handlebars-template">
 				{{#each products}}
@@ -64,22 +64,33 @@
 			</script>
 		</div>
 		<!-- About Us Section -->
-		<div class="about-us">
-			<h3 class="section-title">About us</h3>
+		<div class="about-us" id="about-us-section">
+			<h5 class="section-title">About us</h5>
 			<p>
-				Who are we? Just a bunch of friends with<br />
-				a love for a good coffee and desire to create<br />
+				Who are we? Just a bunch of friends with<br>
+				a love for a good coffee and desire to create<br>
 				something new, somethinng original.
 			</p>
 			<p>
-				Our coffees reflect us - young, wild and free. <br />
+				Our coffees reflect us - young, wild and free. <br>
 				We are on the journey of new tastes...
 			</p>
 			<p class="join-us">Join us!</p>
 		</div>
 
 		<!-- Contact Section -->
-
+		<div class="contact" id="contact-section">
+			<h5 class="section-title">Contact us</h5>
+			<div class="form">
+					<label for="name">Name</label>
+					<input id="name" type="text">
+					<label for="title">Title</label>
+					<input id="title" type="text">
+					<label for="message">Message</label>
+					<textarea id="message" class="message-space"></textarea>
+					<button id="submit" class="submit" type="button">Submit</button>
+			</div>
+	</div>
 		<!-- Footer -->
 		<footer>
 			<p>&#64;2021 EL TIGRE inc.</p>
@@ -118,15 +129,11 @@
 					},
 				],
 			};
-
-			// Pobranie szablonu Handlebars
-			var source = document.getElementById("product-template").innerHTML;
-			// Kompilacja szablonu
-			var template = Handlebars.compile(source);
-			// Generowanie HTML z danych
-			var html = template(productData);
-			// Wstawienie wygenerowanego HTML do elementu output
+			const source = document.getElementById("product-template").innerHTML;
+			const template = Handlebars.compile(source);
+			const html = template(productData);
 			document.getElementById("output").innerHTML = html;
 		</script>
+		<script src="./js/script.js"></script>
 	</body>
 </html>

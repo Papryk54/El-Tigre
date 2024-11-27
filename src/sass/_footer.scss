@@ -1,18 +1,18 @@
 footer {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 10vh;
 }
 
 footer p {
-	font-size: 20px;
-	color: $color-text-dark;
-	text-align: center;
+  font-size: 20px;
+  color: $color-text-dark;
+  text-align: center;
 }
 
 @media (max-width: 1980px) {
-	footer p {
-		font-size: 15px;
-	}
+  footer p {
+    font-size: 15px;
+  }
 }

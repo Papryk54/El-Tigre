@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 1080px;
+  min-height: 1080px;
 }
 
 .form {
@@ -68,7 +68,7 @@ input {
 
 @media (max-width: 1024px) {
   .contact {
-    height: 900px;
+    min-height: 900px;
   }
 
   .contact .section-title {
@@ -90,7 +90,7 @@ input {
 
   .submit {
     width: 20vw;
-    height: 6vh;
+    min-height: 6vh;
   }
 }
 
@@ -98,7 +98,7 @@ input {
 
 @media (max-width: 480px) {
   .contact {
-    height: 1040px;
+    min-height: 1040px;
     margin-top: -120px;
   }
 
@@ -123,6 +123,6 @@ input {
 
   .submit {
     width: 40vw;
-    height: 6vh;
+    min-height: 6vh;
   }
 }
